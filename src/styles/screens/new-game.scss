@@ -1,0 +1,37 @@
+@import '../components/title.scss';
+
+.screen {
+  min-height: 100vh;
+
+  text-align: center;
+}
+
+.difficulties {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  max-width: 320px;
+
+  justify-content: center;
+}
+
+.card {
+  font-family: Inter;
+  font-size: 2rem;
+
+  background-color: #fff;
+
+  padding: 50px;
+
+  border-radius: 5px;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: transform .1s ease-in-out;
+  }
+}
