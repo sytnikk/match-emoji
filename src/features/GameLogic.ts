@@ -61,8 +61,10 @@ export class GameLogic {
 
     if (isUnsolvedLeft === undefined) {
       setTimeout(async () => {
+        const confetties = [];
+
         for (let index = 0; index < 5; index++) {
-          await confetti({
+          confetties.push(confetti({
             particleCount: 100,
             startVelocity: 30,
             spread: 360,
@@ -70,9 +72,10 @@ export class GameLogic {
               x: Math.random(),
               y: Math.random() - 0.2
             }
-          })
+          }))
         }
 
+        await Promise.all(confetties)
         this.gameState.end()
       }, 1000)
     }
