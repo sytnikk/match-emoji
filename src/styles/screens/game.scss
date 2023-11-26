@@ -5,15 +5,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .screen {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-  min-height: -webkit-fill-available;
-
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -21,22 +19,15 @@
   position: absolute;
   top: 10px;
   right: 10px;
-
   color: #fff;
-
   background: none;
   border: none;
-
   cursor: pointer;
 }
 
 .container {
   flex: 1;
   display: flex;
-  justify-content: start;
-  flex-wrap: wrap; 
-}
-
-.opened {
-  color: lime;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
