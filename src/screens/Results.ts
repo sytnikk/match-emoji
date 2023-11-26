@@ -21,11 +21,9 @@ export class Results extends LitElement {
         <h1 class="title">Well done!</h1>
         <p class="title">Your time: ${this.state.time}</p>
         <p class="title">Your attempts: ${this.state.attempts.value}</p>
-        <div class="control">
-          <button class="restart-button" @click=${this.restart}>
-            Restart
-          </button>
-        </div>
+        <button class="restart-button" @click=${this.restart}>
+          Restart
+        </button>
       </main>
     `
   }
