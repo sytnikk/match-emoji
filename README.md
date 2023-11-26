@@ -2,6 +2,8 @@
 
 It's a simple memory game where the user's objective is to uncover and match all pairs of randomly generated emojis.
 
+Link: [sytnikk.github.io/match-emoji](https://sytnikk.github.io/match-emoji)
+
 ## Installation
 
 1. Clone the repository.
